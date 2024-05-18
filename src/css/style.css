@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
+
+:root{
+    --primary-color: #0063F6;
+    --secondary-color: #b4245d;
+    --primary-font-family: 'Poppins', sans-serif;
+    --secondary-font: "Kaisei Decol", serif;
+}
+
+body,html{font-family: var(--primary-font-family);}
+a{text-decoration: none;}
+
+.primary-btn{font-size: 14px;font-weight: 600;line-height: 16.1px;text-align: center;padding: 10px 20px;border-radius: 70px;background: var(--primary-color);color: #fff;box-shadow: 0px 4px 4px 0px #00000026;transition: all 0.3s ease-in-out;}
+.primary-btn:hover{box-shadow: none;}
+.p-text{font-size: 20px;font-weight: 400;line-height: 30px;text-align: left;margin-bottom: 0;}
+.custom-select{border: 1px solid #9B9B9B;box-shadow: 0px 4px 4px 0px #00000026;border-radius: 55px;font-size: 16px;font-weight: 700;line-height: 43px;text-align: left;padding-top: 0;padding-bottom: 0;padding-left: 23px;width: auto;}
+.custom-select:focus{box-shadow: 0px 4px 4px 0px #00000026;}
+
+/* Main Banner Section  */
+.main-banner-section{position: relative;overflow: hidden;}
+.main-banner-section .banner-bg{opacity: 0.7;height: 100%;width: 100%;object-fit: cover;position: absolute;}
+.main-banner-section .inner-content{position: relative;width: 100%;padding: 170px 0 319px 0;}
+.main-banner-section .card-content{padding: 40px 40px 40px 60px;border-radius: 70px 0px 70px 0px;background: #FFFFFFCC;max-width: 610px;}
+.main-banner-section .card-content .heading{font-family: var(--secondary-font);font-size: 42px;font-weight: 500;line-height: 49px;text-align: left;color: #000;margin-bottom: 10px;}
+.main-banner-section .card-content .surgery-type-div{display: flex;align-items: center;gap: 0 11px;margin-top: 20px;}
+
+@media (max-width:768px) {
+    /* Main Banner Section  */
+    .main-banner-section .card-content{padding: 30px 30px 30px 50px;}
+    .main-banner-section .card-content .heading{font-size: 34px;line-height: 42px;}
+
+    .p-text{font-size: 16px;line-height: 24px;}
+}
+@media (max-width:576px) {
+    /* Main Banner Section  */
+    .main-banner-section .card-content{max-width: 100%;padding: 26px 26px 26px 40px;border-radius: 50px 0px 50px 0px;}
+    .main-banner-section .card-content .heading{font-size: 26px;line-height: 36px;}
+    .main-banner-section .card-content .surgery-type-div{flex-wrap: wrap;gap: 10px;}
+    .main-banner-section .card-content .surgery-type-div .primary-btn{width: 100%;}
+    .main-banner-section .card-content .surgery-type-div .custom-select{width: 100%;}
+
+    .custom-select{font-size: 14px;line-height: 36px;padding-left: 16px;}
+    
+}

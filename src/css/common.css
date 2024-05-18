@@ -1,0 +1,61 @@
+.invalid-text{color: #ff0000;font-size: 13px;line-height: 22px;display: block;}
+
+/* Common Header CSS  */
+.main-navbar-wrapper{width: 100%;background: #fff;position: relative;box-shadow: none;}
+.main-navbar-wrapper .navbar{display: flex;justify-content: space-between;width: 100%;align-items: center;}
+.main-navbar-wrapper .navbar .brand-logo-img{height: 60px;}
+
+.main-navbar-wrapper .navbar .navbar-nav{display: flex;align-items: center;gap: 0 20px;}
+.main-navbar-wrapper .navbar .navbar-nav .nav-item .nav-link{padding: 0;font-size: 16px;line-height: 26px;color: #000;font-weight: 500;transition: all 0.3s ease-in-out;}
+.main-navbar-wrapper .navbar .navbar-nav .nav-item .nav-link.active{color: var(--primary-color);transition: all 0.3s ease-in-out;font-weight: 600;}
+@keyframes smoothScroll {
+	0% {transform: translateY(-40px);}
+	100% {transform: translateY(0px);}
+}
+.main-navbar-wrapper.fixed {position: fixed;box-shadow: 0 1px 15px #1e1e1e4d;animation: smoothScroll .5s forwards;top: 0;z-index: 111;}
+.dropdown-toggle::after{border-top:0;border-right:0;border-bottom:0;border-left:0;content:"\f107";font-family:'FontAwesome';font-weight:900;vertical-align:top;margin-left:8px;}
+.navbar-toggler:focus{box-shadow: none;}
+.main-navbar-wrapper .dropdown-menu{border:0;border-radius:2px;background:none;padding:0;background:#fff;box-shadow:0 2px 15px rgba(0,0,0,0.1);margin-top:0px!important; min-width: 230px;top: 28px;}
+.main-navbar-wrapper .dropdown-menu .dropdown-item{transition:0.5s all;color:#444;padding: 8px 15px;;}
+.main-navbar-wrapper .dropdown-menu .dropdown-item:hover{background:rgba(0,0,0,0.15);color:#000;}
+.main-navbar-wrapper .navbar-toggler .navbar-dash{transition:0.2s all;}
+.main-navbar-wrapper .navbar-toggler .navbar-dash{display:block;height:3px;width:30px;background:#000;margin:6px;pointer-events:none;}
+.nav-slide-open .navbar-toggler .navbar-dash:nth-child(2){opacity:0;}
+.nav-slide-open .navbar-toggler .navbar-dash:nth-child(1){transform:rotate(45deg) translate(5px,8px);}
+.nav-slide-open .navbar-toggler .navbar-dash:nth-child(3){transform:rotate(-45deg) translate(5px,-8px);}
+.navbar-toggler{padding: 0;}
+@media (min-width:991px) {
+    .dropdown .dropdown-menu{display: none;}
+    .dropdown:hover .dropdown-menu{display: block;}
+}
+@media (max-width:991px) {
+    .main-navbar-wrapper .navbar .slide{position:fixed;z-index:999;top:0;bottom:0;left:0;min-width:250px;width:300px;max-width:90%;background-color:#fff;transform:translate3d(-100%,0,0);transition:0.5s all cubic-bezier(0.165,0.84,0.44,1);border-right:1px solid transparent;overflow-y:auto;}
+    .nav-slide-open .main-navbar-wrapper .navbar .slide{transform:translate3d(0,0,0);box-shadow:2px 0 5px rgba(0,0,0,0.5);opacity: 1;}
+
+    .main-navbar-wrapper .navbar .navbar-nav{align-items: flex-start;gap: 15px 0;}
+    .main-navbar-wrapper .navbar .navbar-slide{padding: 15px;}
+    .main-navbar-wrapper .dropdown-menu{box-shadow: none;}
+}
+@media (max-width:576px) {
+    .main-navbar-wrapper .navbar .brand-logo-img{height: 45px;}
+}
+
+
+/* Footer CSS  */
+.footer{background: #232529;padding: 40px 0;}
+.footer .logo-content .footer-logo{height: 85px;}
+.footer .logo-content .text{font-size: 16px;line-height: 24px;color: #fff;margin-top: 10px;}
+
+
+/* Contact us page css   */
+.form-group{margin-bottom: 1rem;}
+.contact-us-section{max-width: 600px;margin: auto;padding: 54px 0;}
+.contact-us-section .contact-form .submit-button{background: var(--primary-color); color: #fff;border-radius: 10px;padding: 12px 30px;width: 100%;}
+.contact-us-section .contact-info .contact-info-part .text{color: #737373 !important;font-size: 16px;}
+.contact-us-section .contact-info .contact-info-part .sub-heading{font-size: 22px;color: #151414;font-weight: 600;margin-bottom: 0;line-height: 40px;}
+.contact-us-section .contact-address p{margin: 0px;}
+.contact-us-section .contact-info .contact-text:hover{color: #fdbe01;transition: 0.45s;}
+.contact-page .custom-form-control {height: 50px;border-radius: 0;background-color: #fff;}
+.contact-page .form-control:focus{border-color: var(--primary-color);box-shadow: none;}
+.contact-page textarea.form-control {height: 150px;border-radius: 0;}
+.contact-info-part .media .media-body {margin-top: 12px;}
