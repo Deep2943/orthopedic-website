@@ -4,16 +4,24 @@ import * as Constants from '../../config/constants';
 import 'font-awesome/css/font-awesome.min.css';
 import mainLogo from '../../images/logo.png'
 import "@flaticon/flaticon-uicons/css/all/all.css";
+import "../../js/script";
 
 export default function Header() {
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // });
 
   const toggleNav = () => {
     document.body.classList.toggle("nav-slide-open");
   };
+
+  useEffect(() => {
+    const navMain = document.querySelector("#navMain");
+    const minHeight = navMain.offsetHeight;
+    document.querySelector("header").style.minHeight = minHeight + "px";
+  }, []);
+
 
   // const handleDropdownClick = (event) => {
   //   event.stopPropagation();
@@ -22,9 +30,9 @@ export default function Header() {
   return (
     <header>
     {/* navbar start */}
-    <div className="main-navbar-wrapper">
+    <div className="main-navbar-wrapper" id="navMain">
       <div className="container">
-        <nav className="navbar navbar-expand-lg nav-light" id="navMain">
+        <nav className="navbar navbar-expand-lg nav-light">
             <Link className="navbar-brand-link" to={Constants.HOME_PAGE_URL}>
               <img src={mainLogo} alt={Constants.SITE_NAME} className="brand-logo-img"/>
             </Link>

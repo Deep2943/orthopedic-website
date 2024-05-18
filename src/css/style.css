@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
-
+*{box-sizing: border-box;}
 :root{
     --primary-color: #0063F6;
-    --secondary-color: #b4245d;
+    --secondary-color: #1EBB95;
     --primary-font-family: 'Poppins', sans-serif;
     --secondary-font: "Kaisei Decol", serif;
 }
@@ -12,6 +12,7 @@ body,html{font-family: var(--primary-font-family);}
 a{text-decoration: none;}
 
 .primary-btn{font-size: 14px;font-weight: 600;line-height: 16.1px;text-align: center;padding: 10px 20px;border-radius: 70px;background: var(--primary-color);color: #fff;box-shadow: 0px 4px 4px 0px #00000026;transition: all 0.3s ease-in-out;}
+.secondary-btn{font-size: 14px;font-weight: 600;line-height: 16.1px;text-align: center;padding: 10px 20px;border-radius: 70px;background: var(--secondary-color);color: #fff;transition: all 0.3s ease-in-out;}
 .primary-btn:hover{box-shadow: none;}
 .p-text{font-size: 20px;font-weight: 400;line-height: 30px;text-align: left;margin-bottom: 0;}
 .custom-select{border: 1px solid #9B9B9B;box-shadow: 0px 4px 4px 0px #00000026;border-radius: 55px;font-size: 16px;font-weight: 700;line-height: 43px;text-align: left;padding-top: 0;padding-bottom: 0;padding-left: 23px;width: auto;}
@@ -24,6 +25,13 @@ a{text-decoration: none;}
 .main-banner-section .card-content{padding: 40px 40px 40px 60px;border-radius: 70px 0px 70px 0px;background: #FFFFFFCC;max-width: 610px;}
 .main-banner-section .card-content .heading{font-family: var(--secondary-font);font-size: 42px;font-weight: 500;line-height: 49px;text-align: left;color: #000;margin-bottom: 10px;}
 .main-banner-section .card-content .surgery-type-div{display: flex;align-items: center;gap: 0 11px;margin-top: 20px;}
+
+/* About Section  */
+.about-section{margin-top: -113px;}
+.about-section .top-card{padding: 48px 60px 48px 60px;border: 2px solid #1EBB95;border-radius: 20px;display: flex;flex-direction: column;height: 100%;align-items: center;justify-content: center;gap: 24px 0;background: #fff;position: relative;z-index: 11;}
+.about-section .top-card .title{font-size: 42px;font-weight: 700;line-height: 49px;text-align: center;padding-bottom: 22px;font-family: var(--secondary-font);position: relative;margin-bottom: 0;}
+.about-section .top-card .title::before{content: "";width: 212px;height: 2px;background: #1EBB95;position: absolute;bottom: 0;left: 50%;transform: translate(-50%,-50%);}
+.about-section .top-card .p-text{text-align: center;}
 
 @media (max-width:768px) {
     /* Main Banner Section  */

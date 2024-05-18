@@ -24,6 +24,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="about-section">
+        <div className="container">
+          <div className="top-card">
+            <h4 className="title">Best Dallas Ortho Surgeons</h4>
+            <p className="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit fugit.</p>
+            <Link to={void(0)} className="secondary-btn">Learn More</Link>
+          </div>
+
+          <div className="about-section">
+            
+          </div>
+        </div>
+      </section>
     </Layout>
   )
 }
